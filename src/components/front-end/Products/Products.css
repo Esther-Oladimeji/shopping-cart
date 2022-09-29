@@ -1,0 +1,104 @@
+
+.products{
+    margin: 20px auto;
+    border-radius: 6px;
+    box-shadow: 0 0 20px 8px #d0d0d0;
+}
+.products-card-section{
+   
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  
+   
+}
+
+.product-section-title{
+    font-family: 'Grand Hotel', cursive;
+    padding-top: 25px;
+    text-align: center;
+    font-size: 25px;
+    margin: auto;
+    border: .5px solid rgb(172, 171, 171);
+    border-top: 0;
+    width: 200px;
+    height: 50px;
+}
+
+.cards{
+    box-shadow: 0 0 10px 5px #e0dfdf;
+    border-radius: 5px;
+    min-width: 200px;
+    max-height: 300px;
+    overflow: hidden;
+    padding: 10px;
+    margin: 30px 20px;
+    background-color: #fff;
+}
+
+.product-image{
+width: 100%;
+max-width: 300px;
+max-height: 180px;
+display: block;
+object-fit: cover;
+}
+
+.product-name{
+    margin: 10px 0;
+    
+}
+
+.product-price{
+    margin: 10px 0 0;
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+
+.product-button{
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 5px;
+    border:none;
+    outline: none;
+    background-color:  rgb(36, 36, 36);
+   color: #fff;
+   width: 100%;
+   height: 30px;
+   cursor: pointer;
+display: block;
+margin:  auto;
+}
+
+.product-button:hover{
+    background-color: rgb(23, 23, 77);
+}
+
+.product-button:active{
+    transform: translateY(3px);
+}
+
+@media screen and (max-width: 800px) {
+    .products{
+        margin: 0 !important;
+        
+    }
+    .cards{
+        min-width: 80%;
+        min-height: 360px;
+    }
+    .product-image{
+        width: 100%;
+        max-width: 100%;
+        max-height: 240px;
+        display: block;
+        object-fit: cover;
+        }
+        .products-card-section{
+            margin: 40px auto;
+           
+        }
+        .product-section-title{
+            height: 45px;
+        }
+  }
