@@ -13,11 +13,11 @@ export default function Header({cartItems}) {
             </div>
             <div className="header-links">
                 <ul>
-                    <div className="filter">
+                    {/*<div className="filter">
                         <li>
                             <i class="fa fa-filter" aria-hidden="true"></i>
                         </li>
-                    </div>
+                    </div>*/}
                     <div className="cart">
                         <li>
                             <Link to="/cart"><i class="fa fa-shopping-cart"/>
