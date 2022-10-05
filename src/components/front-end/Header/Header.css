@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+@import url( 'https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
 
 .header {
-    background-color:  rgb(44, 44, 44);
+    background-color: rgb(44, 44, 44);
     height: 52px;
     display: flex;
     justify-content: space-between;
@@ -12,7 +12,7 @@
     margin: 0 auto;
 }
 
-.logo{
+.logo {
     padding-left: 40px;
     text-decoration: none;
     color: white;
@@ -21,25 +21,24 @@
     letter-spacing: 6px;
 }
 
-.header-links ul{
+.header-links ul {
     display: flex;
-  flex-direction: row;
-  margin-right: 10px;
+    flex-direction: row;
+    margin-right: 10px;
 }
 
-.header-links ul li{
+.header-links ul li {
     list-style: none;
     display: inline-block;
     padding: 0 5px;
 }
 
-.header-links ul li a{
+.header-links ul li a {
     text-decoration: none;
     color: white;
 }
-
-@media screen and (max-width: 800px){
-    .header{
+@media screen and (max-width: 800px) {
+    .header {
         min-height: 63px;
     }
 }

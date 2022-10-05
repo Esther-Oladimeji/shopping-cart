@@ -2,9 +2,9 @@
     width: 100%;
     margin: 30px auto;
     border-color: rgb(60, 60, 60);
-    margin: 20px auto;
     border-radius: 6px;
     box-shadow: 0 0 20px 8px #d0d0d0;
+    padding-bottom: 30px;
 }
 
 .cart-items-header {
@@ -32,7 +32,7 @@
 }
 
 .cart-image-container{
-    width: 300px;
+
 height: 100px;
 }
 .cart-image {
@@ -40,7 +40,7 @@ height: 100px;
    object-fit: contain;
     height: 100px;
     bottom: 2px solid black;
-    margin-right: 10px;
+    padding: 0 10px;
 }
 .cart-image img{
     width: 100%;
@@ -52,15 +52,18 @@ height: 100px;
 .cart-list {
     display: flex;
     align-items: center;
-    padding: 30px 10px;
+    justify-content: space-around;
+    padding: 30px 20px;
     font-size: 20px;
     font-weight: 700;
     height: 150px;
 }
-
-.cart-functions,
-.cart-name {
-    width: 25%;
+.mobile-cart-list{
+    display: none;
+}
+.cart-functions{
+    display: flex;
+    justify-content: space-around;                                   
 }
 
 .cart-add-button,
@@ -89,18 +92,15 @@ height: 100px;
 }
 
 .cart-total-price-letter {
-    padding: 20px 0;
+    padding: 20px 50px;
     display: flex;
+    margin: 0 50px;
     font-size: 20px;
     font-weight: 700;
     border-top: 2px solid #000;
     justify-content: space-between;
 }
 
-.cart-total-price-amount {
-    display: flex;
-
-}
 
 .clear-all-cart {
     display: flex;
@@ -124,4 +124,49 @@ height: 100px;
 .clear-all-cart button:hover {
     background-color: rgb(137, 74, 85);
     color: white;
+}
+.item-price{
+    color:rgb(172, 171, 171);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.item-quantity{
+    margin-right: 15px;
+}
+@media screen and (max-width: 800px) {
+    .cart-image {
+          padding: 0 ;
+      }
+      .cart-list{
+        display: none;
+      }
+      .mobile-cart-list{
+        display: block;
+        
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 30px 10px;
+            font-size: 20px;
+            font-weight: 700;
+            height: 150px;
+      }
+      
+.cart-functions {
+    margin-top: 10px;
+}
+.cart-add-button,
+.cart-remove-button{
+    margin-top: 10px;
+}
+.item-quantity{
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.cart-total-price-letter {
+    padding: 20px 30px;
+    
+}
 }
