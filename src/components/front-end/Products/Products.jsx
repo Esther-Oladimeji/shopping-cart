@@ -1,5 +1,6 @@
 import "./Products.css"
-import {useState} from "react"
+import React from 'react';
+
 
 export default function Products({lists, handleAddToCart}) {
 
